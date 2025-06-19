@@ -1,0 +1,133 @@
+.again{
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: 8vh;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: "pixelify sans" , sans-serif;
+}
+
+.between{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    height: 8vh;
+    align-items: center;;
+}
+.guess{
+    position: relative;
+    font-size: 30px;
+    font-family: pixelify sans, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+#inputText{
+    position: relative;
+    display: flex;
+   left: 450px;
+    font-size: 50px;
+    height: 8vh;
+    border-radius: 20px;
+    
+}
+
+.scoreContainer{
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-start;
+    top: 20px;
+    font-size: 30px;
+    height: 8vh;
+    left: 450px;
+}
+
+.zero{
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: 8vh;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.highScoreContainer{
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-start;
+    top: 20px;
+    font-size: 30px;
+    height: 8vh;
+    left: 550px;
+}
+
+.zer{
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: 8vh;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.check{
+    position: relative;
+    top: 20px;
+    left: 650px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: 8vh;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+body{
+    background-color: lightgray;
+   
+}
+
+.box{
+    position: relative;
+    top: 20px;
+    left: 650px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    width: 150px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.enter{
+    position: relative;
+    font-size: 30px;
+    font-family: pixelify sans, sans-serif;
+    display: flex;
+    justify-content: center;
+}
