@@ -38,6 +38,8 @@
     font-size: 50px;
     height: 8vh;
     border-radius: 20px;
+    border: 1px solid #ccc;
+
     
 }
 
@@ -107,6 +109,8 @@
 
 body{
     background-color: lightgray;
+    text-align:center
+   
    
 }
 
@@ -121,8 +125,9 @@ body{
     align-items: center;
     background-color: black;
     color: white;
+
     border-radius: 10px;
-}
+    padding: 5px; }
 
 .enter{
     position: relative;
@@ -131,3 +136,5 @@ body{
     display: flex;
     justify-content: center;
 }
+
+
