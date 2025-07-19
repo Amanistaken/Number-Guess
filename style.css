@@ -1,140 +1,94 @@
-.again{
-    position: relative;
-    top: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    height: 8vh;
-    align-items: center;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    font-family: "pixelify sans" , sans-serif;
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: #eee;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
-.between{
-    position: relative;
-    top: 20px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 30px;
-    height: 8vh;
-    align-items: center;;
-}
-.guess{
-    position: relative;
-    font-size: 30px;
-    font-family: pixelify sans, sans-serif;
-    display: flex;
-    justify-content: center;
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-
-#inputText{
-    position: relative;
-    display: flex;
-   left: 450px;
-    font-size: 50px;
-    height: 8vh;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-
-    
+.between {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-.scoreContainer{
-    position: relative;
-    display: inline-flex;
-    justify-content: flex-start;
-    top: 20px;
-    font-size: 30px;
-    height: 8vh;
-    left: 450px;
+.box {
+  font-size: 4rem;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
-.zero{
-    position: relative;
-    top: 25px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    height: 8vh;
-    align-items: center;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
+.message {
+  font-size: 1.5rem;
+  color: red;
+  height: 30px;
 }
 
-.highScoreContainer{
-    position: relative;
-    display: inline-flex;
-    justify-content: flex-start;
-    top: 20px;
-    font-size: 30px;
-    height: 8vh;
-    left: 550px;
+.input-container {
+  margin: 20px;
 }
 
-.zer{
-    position: relative;
-    top: 25px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    height: 8vh;
-    align-items: center;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
+#guessInput {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-.check{
-    position: relative;
-    top: 20px;
-    left: 650px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    height: 8vh;
-    align-items: center;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    
+.check {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-body{
-    background-color: lightgray;
-    text-align:center
-   
-   
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 0px;
 }
 
-.box{
-    position: relative;
-    top: 20px;
-    left: 650px;
-    display: flex;
-    justify-content: center;
-    font-size: 100px;
-    width: 150px;
-    align-items: center;
-    background-color: black;
-    color: white;
-
-    border-radius: 10px;
-    padding: 5px; }
-
-.enter{
-    position: relative;
-    font-size: 30px;
-    font-family: pixelify sans, sans-serif;
-    display: flex;
-    justify-content: center;
+.score-section,
+.highscore-section {
+  font-size: 1.5rem;
 }
 
+.score,
+.highscore {
+  display: block;
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
 
+.again {
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer{
+  font-size: 1rem;
+  font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+     <title>Guess The Number</title>
 </head>
+  <script defer src="index.js"></script>
 <body>
-   
-   <p class="between">(Between 1 and 20)</p>
-   <h1 class="box">?</h1>
-   <H2 class="guess">Guess My Number?</h2>
-    <p class="enter"></p>
-   
-  <input type="number" id="inputText">
-  <button class="check ">check</button>
-   
-   <div class="scoreContainer"> 
-       <h4 class="score">Score:</h4>
-       <button class="zero">20</button>
-   </div>
-  
-   <div class="highScoreContainer">
-      <h4 class="highScore">HighScore:</h4>
-      <button class="zer">00</button>
-   </div>
-  
- <h3 class="again">Again!</h3>
-   
-  
+  <h1 class="title">Guess My Number?</h1>
+  <p class="between">(Between 1 and 20)</p>
+  <h2 class="box">?</h2>
+
+  <p class="message"></p>
+
+  <div class="input-container">
+    <input type="number" id="guessInput" placeholder="Enter a number" />
+    <button class="check">Check</button>
+  </div>
+
+  <div class="scoreboard">
+    <div class="score-section">
+      <h3>Score:</h3>
+      <span class="score">20</span>
+    </div>
+    <div class="highscore-section">
+      <h3>High Score:</h3>
+      <span class="highscore">0</span>
+    </div>
+  </div>
+
+  <button class="again">Play Again</button>
+<footer> &copy; 2025</footer>
+</body>
+</html>
+
