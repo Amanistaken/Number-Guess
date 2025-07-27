@@ -1,4 +1,5 @@
 'use strict'
+import confetti  from "canvas-confetti";
 
 class numberGenerator{
     constructor(){
@@ -13,7 +14,7 @@ class numberGenerator{
     // game stats
     this.secretNumber = this.generateSecretNumber();
     this.score = 20;
-    this.highScore = 0;
+    this.highScore = Number(localStorage.getItem(this.highScore) || 0);
 
     // event listener 
     this.check.addEventListener('click', this.checkGuess.bind(this))
@@ -40,8 +41,19 @@ class numberGenerator{
         this.box.textContent = this.secretNumber;
         this.box.style.backgroundColor = 'green';
 
+    confetti({
+        particleCount: 150,
+        startVelocity: 30,
+        spread: 360,
+        ticks: 60,
+        origin: { x: 0.5, y: 0.4 },
+        shapes: ['circle', 'star'],
+     });
+
+
         if(this.score > this.highScore){
             this.highScore = this.score;
+            localStorage.setItem('highScore', this.highScore);
             this.highScoreDisplay.textContent = this.score;
         } 
        } else{
@@ -52,8 +64,8 @@ class numberGenerator{
         } else{
             this.displayMesssage('💥 Game Over!')
             this.box.style.backgroundColor = 'red';
-            this.justScore.textContent = 0;
-            this.box.textContent = thissecretNumber;
+            this.scoreDisplay.textContent = 0;
+            this.box.textContent = this.secretNumber;
         }
     }
     
@@ -64,10 +76,14 @@ class numberGenerator{
     this.box.textContent = '?';
     this.input.value = '';
     this.displayMesssage('');
-    this.secretNumber = Math.floor(Math.random()* 20) + 1;
+    this.secretNumber = this.generateSecretNumber();
     this.scoreDisplay.textContent = 20;
+    this.score = 20;
+    localStorage.clear('')
     }
 }
+
+
 
   
 const game = new numberGenerator();
